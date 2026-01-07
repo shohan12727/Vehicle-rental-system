@@ -14,7 +14,7 @@ const createdUserIntoDB = async (payLoad: Record<string, unknown>) => {
     [name, email, hashedPassword, phone, role]
   );
 
-//   delete result.rows[0].password
+  delete result.rows[0].password
 
   return result;
 };
